@@ -10,3 +10,17 @@ yarn create next-app --experimental-app nextjs-starter-blog
 yarn add -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
+
+## Setup typescript alias path
+```bash
+# tsconfig.json
+{
+    "compilerOptions": {
+        # ...,
+        "baseUrl": ".",
+        "paths": {
+        "@/app/*": ["app/*"]
+        }
+    }
+}
+```
